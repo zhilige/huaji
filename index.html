@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>滑稽表情</title>
+		<style>
+			.container {
+				width: 200px;
+				height: 200px;
+				background: #fd8;
+				border: 5px solid #ea5;
+				border-radius: 50%;
+				position: relative;
+				
+			}
+			.lian{
+				-webkit-animation: bounce-down 0.3s linear infinite;
+				animation: bounce-down 0.3s linear infinite;
+			}
+			
+			.mouth {
+				width: 160px;
+				height: 140px;
+				border-bottom: 8px solid #FF4500;
+				border-left: 2px solid transparent;
+				border-right: 2px solid transparent;
+				border-radius: 50%;
+				position: absolute;
+				bottom: 25px;
+				left: 20px;
+				top: 30px;
+			}
+			
+			.e1 {
+				position: absolute;
+				width: 60px;
+				height: 60px;
+				overflow: hidden;
+				top: 0px;
+				left: 0px;
+			}
+			
+			.e2 {
+				position: absolute;
+				width: 50px;
+				height: 50px;
+				overflow: hidden;
+				top: 20px;
+				left: 20px;
+			}
+			
+			.e1::before {
+				content: "";
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				border: 5px solid #fb7;
+				border-radius: 70px;
+			}
+			
+			.e2::before {
+				content: "";
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				border: 5px solid #fb7;
+				border-radius: 70px;
+			}
+			
+			.e3 {
+				position: absolute;
+				width: 10px;
+				height: 20px;
+				border: 5px solid #fb7;
+				border-radius: 100% 0 0 100%/50%;
+				border-right: none;
+				top: 0px;
+				left: 60px;
+				transform: rotate(170deg);
+			}
+			
+			.e4 {
+				position: absolute;
+				width: 10px;
+				height: 20px;
+				border: 5px solid #fb7;
+				border-radius: 100% 0 0 100%/50%;
+				border-right: none;
+				top: 56px;
+				left: 4px;
+				transform: rotate(290deg);
+			}
+			
+			.e5 {
+				position: absolute;
+				width: 69px;
+				height: 69px;
+				overflow: hidden;
+				top: 3px;
+				left: 0px;
+			}
+			
+			.e5::before {
+				content: "";
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				border: 24px solid white;
+				border-radius: 70px;
+			}
+			
+			.e6 {
+				position: absolute;
+				width: 22px;
+				height: 22px;
+				border-radius: 50%;
+				background: black;
+				top: 55px;
+				left: 3px;
+			}
+			
+			@-webkit-keyframes bounce-down {
+				25% {
+					-webkit-transform: translateY(-1px);
+				}
+				50%,
+				100% {
+					-webkit-transform: translateY(0);
+				}
+				75% {
+					-webkit-transform: translateY(1px);
+				}
+			}
+			
+			@keyframes bounce-down {
+				25% {
+					transform: translateY(-1px);
+				}
+				50%,
+				100% {
+					transform: translateY(0);
+				}
+				75% {
+					transform: translateY(1px);
+				}
+			}
+			
+			.eye {
+				
+			}
+			
+			.eye_left {
+				position: absolute;
+				top: 18px;
+				left: 36px;
+				transform: rotate(40deg);
+			}
+			
+			.eye_right {
+				position: absolute;
+				top: 18px;
+				left: 160px;
+				transform: rotate(40deg);
+			}
+			
+			.liandan1 {
+				position: absolute;
+				width: 60px;
+				height: 25px;
+				background: #FF9D52;
+				border-radius: 50% / 50%;
+				top: 88px;
+			}
+			.liandan2 {
+				position: absolute;
+				width: 60px;
+				height: 25px;
+				background: #FF9D52;
+				border-radius: 50% / 50%;
+				top: 88px;
+				left: 140px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="lian">
+			<div class="eye">
+				<div class="eye_left">
+					<div class="e5"></div>
+					<div class="e1"></div>
+					<div class="e2"></div>
+					<div class="e3"></div>
+					<div class="e4"></div>
+					<div class="e6"></div>
+				</div>
+				<div class="eye_right">
+					<div class="e5"></div>
+					<div class="e1"></div>
+					<div class="e2"></div>
+					<div class="e3"></div>
+					<div class="e4"></div>
+					<div class="e6"></div>
+				</div>
+			</div>
+			<div class="liandan">
+               <div class="liandan1"></div>
+               <div class="liandan2"></div>
+			</div>
+			<div class="mouth">
+
+			</div>
+			</div>
+		</div>
+	</body>
+
+</html>
